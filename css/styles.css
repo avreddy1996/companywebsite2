@@ -58,6 +58,19 @@ html,body{
 .nvc-panel1{
     color: #ffffff;
 }
+.nvc-panel1-container .btn{
+    background: #ffffff;
+    border: 4px solid #ffffff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.nvc-panel1-container .btn:hover{
+    background: none;
+    color: #ffffff;
+}
 /*======== Panel 1 CSS ends here =======*/
 /*======== Panel 3 CSS goes here =======*/
 .nvc-panel3-text h3{

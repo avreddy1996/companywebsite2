@@ -32,6 +32,9 @@ var mousePosition = {};
 ctx.lineWidth = .2;
 ctx.lineCap = "round";
 ctx.lineJoin = "round";
+/*===== Image positions ==========*/
+var image1 = {x: 14*width/100, y: 33*height/100, wid: 300*width/1280, hig: 300*height/720};
+var image2 = {x: 92*width/100, y: 37*height/100, wid: 150*width/1280, hig: 150*height/720};
 /*==== initialize dots ===========*/
 for(var i=0;i<dotsNum;i++){
     dots.push({
@@ -81,13 +84,13 @@ function drawBackground(ctx, xoff, yoff,) {
 }
 function drawImage(img, mouse) {
     ctx.beginPath();
-    if(mouse.x>0 && mouse.y>0){
-        ctx.drawImage(img, 14*width/100 + mouse.x/50, 34*height/100 - (height - mouse.y)/50, 300, 300);
-        ctx.drawImage(img, 92*width/100 + (width - mouse.x)/60, 35*height/100 - (height - mouse.y)/60, 150, 150);
-    }else {
-        ctx.drawImage(img, 14 * width / 100, 34 * height / 100, 300, 300);
-        ctx.drawImage(img, 92 * width / 100, 35 * height / 100, 150, 150);
-    }
+    /*if(mouse.x>0 && mouse.y>0){
+        ctx.drawImage(img, image1.x + mouse.x/50, image1.y - (height - mouse.y)/50, image1.wid, image1.hig);
+        ctx.drawImage(img, image2.x + (width - mouse.x)/60, image2.y - (height - mouse.y)/60, image2.wid, image2.hig);
+    }else {*/
+        ctx.drawImage(img, image1.x, image1.y, image1.wid, image1.hig);
+        ctx.drawImage(img, image2.x, image2.y, image2.wid, image2.hig);
+    /*}*/
     ctx.closePath();
 }
 function drawDots(ctx, dots) {
@@ -99,6 +102,7 @@ function drawDots(ctx, dots) {
         ctx.arc(dot.x, dot.y, dot.radius, 0, 2*Math.PI);
         ctx.fillStyle = dot.color;
         ctx.fill();
+        ctx.closePath();
     }
 }
 function updateDots(dots){
@@ -122,6 +126,7 @@ function drawLines(dots1, dots2){
         drawLine(dot1.x, dot1.y, dots2);
     }
     drawLine(mousePosition.x, mousePosition.y, dots2);
+    drawLine(mousePosition.x, mousePosition.y, dots1);
 }
 function drawLine(x,y,dots){
     var dot;
@@ -143,9 +148,9 @@ function updateMouse(e){
     mousePosition.x = e.clientX;
     mousePosition.y = e.clientY;
 }
-container.onmousemove = function(){
+container.addEventListener("mousemove", function (event) {
     updateMouse(event);
-};
+});
 container.onmouseleave = function(){
     mousePosition.x = 0;
     mousePosition.y = 0;
