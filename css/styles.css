@@ -2,15 +2,18 @@
 ----- 11-05-2018 -----------*/
 html,body{
     font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
     width: 100%;
-    height: auto;
+    height: 100%;
     letter-spacing: 1px;
+    color: #252525;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -ms-overflow-x: hidden;
-    -ms-overflow-y: auto;
+    scroll-behavior: smooth;
+}
+body.hide{
+    height: 100%;
+    overflow: hidden;
 }
 /*========Global CSS starts here ========*/
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
@@ -25,6 +28,9 @@ html,body{
 .line-height-1-5{
     line-height: 1.5;
 }
+.line-height-md-1-5{
+    line-height: 1.5;
+}
 .row{
     margin-right: auto;
     margin-left: auto;
@@ -35,8 +41,52 @@ html,body{
 .nvc-theme-color{
     color: #091965;
 }
+.nvc-section-divider{
+    width: 100%;
+    height: 10px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0c4cb4+50,3e95e5+50 */
+    background: #0c4cb4; /* Old browsers */
+    background: -moz-linear-gradient(left, #0c4cb4 50%, #3e95e5 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #0c4cb4 50%,#3e95e5 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #0c4cb4 50%,#3e95e5 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c4cb4', endColorstr='#3e95e5',GradientType=1 ); /* IE6-9 */
+}
+
+.gradient-to-right{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0c4cb4+0,3e95e5+100 */
+    background: #0c4cb4; /* Old browsers */
+    background: -moz-linear-gradient(left, #0c4cb4 0%, #3e95e5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #0c4cb4 0%,#3e95e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #0c4cb4 0%,#3e95e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c4cb4', endColorstr='#3e95e5',GradientType=1 ); /* IE6-9 */
+}
+.white-border-right{
+    border-right: 2px solid #ffffff;
+}
+.panel-column h6{
+    padding: 10px 0;
+}
+.w-10{
+    width: 10% !important;
+}
+.flip{
+    -webkit-transform: rotateY(180deg) translateY(-50%) !important;
+    -moz-transform: rotateY(180deg) translateY(-50%) !important;
+    -ms-transform: rotateY(180deg) translateY(-50%) !important;
+    -o-transform: rotateY(180deg) translateY(-50%) !important;
+    transform: rotateY(180deg) translateY(-50%) !important;
+}
+.margin-top-3{
+    margin-top: -3rem;
+}
 /*========Global CSS ends here ==========*/
 /*========Header CSS starts here ========*/
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
 .nvc-header-image img{
     height: 48px;
     padding: 5px;
@@ -53,13 +103,81 @@ html,body{
     -moz-border-radius: 100rem;
     border-radius: 100rem;
 }
+.nvc-background-left,
+.nvc-background-right{
+    position: relative;
+}
+.nvc-background-left:before,
+.nvc-background-right:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right bottom, from(#0C4CB4), to(#3E95E5));
+}
+.nvc-background-left:before{
+    left: 0;
+}
+.nvc-background-right:before{
+    right: 0;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-8{
+    flex: 8;
+}
+.justify-content-space-evenly{
+    justify-content: space-evenly;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+.panel-header{
+    font-size: 2rem;
+    font-weight: 900;
+    background:-webkit-gradient(linear, left top, right top, from(#0C4CB4), to(#3E95E5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.square-image{
+    padding: 35% 0;
+    position: relative;
+}
+.square-image img{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    height: 100%;
+    object-fit: contain;
+}
 /*========Header CSS Ends here =========*/
 /*======== Panel 1 CSS Goes here =======*/
 .nvc-panel1{
-    color: #ffffff;
+    height: 100%;
+    /*background-image: url('../img/illustration-web-bg.png');
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;*/
+    /*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0c4cb4+0,3e95e5+75,3e95e5+75,ffffff+100 *!
+    background: #0c4cb4; !* Old browsers *!
+    background: -moz-linear-gradient(top, #0c4cb4 0%, #3e95e5 75%, #3e95e5 75%, #ffffff 100%); !* FF3.6-15 *!
+    background: -webkit-linear-gradient(top, #0c4cb4 0%,#3e95e5 75%,#3e95e5 75%,#ffffff 100%); !* Chrome10-25,Safari5.1-6 *!
+    background: linear-gradient(to bottom, #0c4cb4 0%,#3e95e5 75%,#3e95e5 75%,#ffffff 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c4cb4', endColorstr='#ffffff',GradientType=0 ); !* IE6-9 *!
+    !*background: linear-gradient(to bottom,#0C4CB4, #3E95E5);*!*/
+}
+.nvc-panel1-container{
+    height: 100%;
 }
 .nvc-panel1-container .btn{
-    background: #ffffff;
+    color: #ffffff;
     border: 4px solid #ffffff;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -67,26 +185,154 @@ html,body{
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+.nvc-panel1-continuation{
+    height: 100%;
+    background: #ffffff;
+}
 .nvc-panel1-container .btn:hover{
     background: none;
-    color: #ffffff;
+    color: #0C4CB4;
+    border-color: #0C4CB4;
 }
-/*======== Panel 1 CSS ends here =======*/
-/*======== Panel 3 CSS goes here =======*/
-.nvc-panel3-text h3{
-    font-size: 2.6em;
+.nvc-panel1-continuation .btn{
+    color: #ffffff;
     font-weight: 600;
+    padding: .35rem 5rem;
+}
+
+/*======== Panel 1 CSS ends here =======*/
+/*======== Panel 2 CSS goes here =======*/
+.nvc-panel2{
+    height: 75%;
+}
+.nvc-panel2 .content{
+    height: 100%;
+}
+/*======== Panel 2 CSS ends here =======*/
+/*======== panel 2 timeline css starts here ===*/
+.timeline-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+}
+.timeline-header:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #252525;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+}
+.timeline-header .item {
+    background: #fff;
+    z-index: 1;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.timeline-header .item.active{
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.timeline-header .item:after{
+    width: 90%;
+    height: 90%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid #252525;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.timeline-header .item.active:after{
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.timeline-header .item img{
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid #252525;
+}
+.timeline-container .item{
+    display: none;
+    opacity: 0;
+}
+.timeline-container .item.active{
+    display: block;
+    opacity: 1;
+}
+/*======== panel 2 timeline css ends here =====*/
+/*======== Panel 3 CSS goes here =======*/
+.nvc-panel3{
+    height: 75%;
 }
 /*======== Panel 3 css ends here =======*/
 /*======== Panel 4 CSS goes here =======*/
 .nvc-panel4{
-    background: linear-gradient(to bottom, #e4e4e4 50%, #ffffff 50%);
-    background: -moz-linear-gradient(to bottom, #e4e4e4 50%, #ffffff 50%);
-    background: -ms-linear-gradient(to bottom, #e4e4e4 50%, #ffffff 50%);
-    background: -o-linear-gradient(to bottom, #e4e4e4 50%, #ffffff 50%);
-    background: -webkit-linear-gradient(to bottom, #e4e4e4 50%, #ffffff 50%);
+    height: 75%;
+    background: #ffffff;
 }
 /*======== Panel 4 CSS ends here =======*/
+/*======== Carousel panel css goes here ==*/
+.carousel-panel{
+    overflow: hidden;
+    background-size: contain;
+    background-image: url("../img/baselayer.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.carousel-panel .carousel-item img{
+    width: 72%;
+    padding: 7rem 2rem 16rem 0;
+    margin-left: auto;
+    display: block;
+}
+.controls div{
+    cursor: pointer;
+}
+.carousel-panel-continuation{
+    color: #ffffff;
+    position: absolute;
+    bottom: 6%;
+    z-index: -1;
+}
+.carousel-panel-continuation a{
+    color: #ffffff;
+    text-decoration: underline;
+}
 /*======== Panel 5 CSS goes here =======*/
 .nvc-panel5-text:before,
 .nvc-panel5-text:after{
@@ -136,3 +382,245 @@ html,body{
     color: #000;
 }
 /*======== Panel 6 CSS Ends here =======*/
+/*======== Custom carousel css here ====*/
+.custom-carousel .carousel-indicators{
+    bottom: -10px;
+    height: 12px;
+    align-items: center;
+}
+.custom-carousel .carousel-indicators li{
+    width: 8px;
+    height: 8px;
+    background: #e4e4e4;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+.custom-carousel .carousel-indicators li.active{
+    width: 12px;
+    height: 12px;
+    background: #0c4cb4;
+    -webkit-box-shadow: 0 0 10px 0 #3e95e5;
+    -moz-box-shadow: 0 0 10px 0 #3e95e5;
+    box-shadow: 0 0 10px 0 #3e95e5;
+}
+.detailview-carousel .carousel-item{
+    opacity: 0;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+.detailview-carousel .carousel-item.active,
+.detailview-carousel .carousel-item.carousel-item-next,
+.detailview-carousel .carousel-item.carousel-item-prev{
+    opacity: 1;
+}
+/*======== custom carousel css ends ====*/
+/*======== contact us panel css goes here ====*/
+.panel-contact-us{
+    color: #ffffff;
+}
+/*======== contact us panel css ends here ====*/
+.nvc-panel7 p{
+    font-size: 0.9em;
+    line-height: 2;
+}
+/*======== ham menu css starts here =====*/
+.ham-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.ham-menu ul{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+.ham-menu ul li{
+    width: 20px;
+    height: 2px;
+    background: #252525;
+    -webkit-transition: all ease-in 0.4s;
+    -moz-transition: all ease-in 0.4s;
+    -ms-transition: all ease-in 0.4s;
+    -o-transition: all ease-in 0.4s;
+    transition: all ease-in 0.4s;
+}
+.ham-menu ul li.menu-bar-1{
+    -webkit-transform: translateY(-3.75px);
+    -moz-transform: translateY(-3.75px);
+    -ms-transform: translateY(-3.75px);
+    -o-transform: translateY(-3.75px);
+    transform: translateY(-3.75px);
+}
+.ham-menu ul li.menu-bar-2{
+    -webkit-transform: translateY(3.75px) translateZ(0);
+    -moz-transform: translateY(3.75px) translateZ(0);
+    -ms-transform: translateY(3.75px) translateZ(0);
+    -o-transform: translateY(3.75px) translateZ(0);
+    transform: translateY(3.75px) translateZ(0);
+}
+.ham-menu ul li.menu-bar-3{
+    -webkit-transform: translateY(12px);
+    -moz-transform: translateY(12px);
+    -ms-transform: translateY(12px);
+    -o-transform: translateY(12px);
+    transform: translateY(12px);
+}
+.ham-menu.toggled ul li.menu-bar-1{
+    -webkit-transform: rotate(45deg) translate(1.5px, 1.5px);
+    -moz-transform: rotate(45deg) translate(1.5px, 1.5px);
+    -ms-transform: rotate(45deg) translate(1.5px, 1.5px);
+    -o-transform: rotate(45deg) translate(1.5px, 1.5px);
+    transform: rotate(45deg) translate(1.5px, 1.5px);
+}
+.ham-menu.toggled ul li.menu-bar-2{
+    -webkit-transform: rotate(-45deg) translateZ(0);
+    -moz-transform: rotate(-45deg) translateZ(0);
+    -ms-transform: rotate(-45deg) translateZ(0);
+    -o-transform: rotate(-45deg) translateZ(0);
+    transform: rotate(-45deg) translateZ(0);
+}
+.ham-menu.toggled ul li.menu-bar-3{
+    width: 0;
+}
+.xs-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    transition: all linear 0.4s;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.xs-menu.toggled{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.brand-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 10px auto;
+    width: 30%;
+    z-index: 2;
+}
+/*======== Media queries goes here =====*/
+/*======== progress bar css goes here ====*/
+.overlay{
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(0,0,0,0.9);
+    transition: 1s 0.4s;
+}
+.progress-line{
+    height:1px;
+    background:#fff;
+    position:absolute;
+    width:0;
+    top:50%;
+}
+.progress-stats{
+    font-size:0.7em;
+    letter-spacing: 3px;
+    position:absolute;
+    top:50%;
+    margin-top:-40px;
+    width:100%;
+    text-align:center;
+    color:#fff;
+}
+/*======== progress bar css ends here ====*/
+@media (max-width: 576px) {
+    html,body{
+        font-size: 14px;
+        height: auto;
+    }
+    .nvc-background-right:before,
+    .nvc-background-left:before{
+        width: 50%;
+        z-index: -1;
+    }
+    .panel-header{
+        font-size: 1.4rem;
+    }
+    .nvc-panel1{
+        background-image: none;
+    }
+    .nvc-panel2,
+    .nvc-panel3,
+    .nvc-panel4{
+        height: auto;
+    }
+    .panel-header{
+        color: #000;
+        background: none;
+        -webkit-text-fill-color: #000000;
+    }
+    .panel-subheader{
+        font-size: 1.2rem;
+    }
+    .nvc-section-divider{
+        height: 7px;
+    }
+    .nvc-section-divider-xs{
+        width: 30%;
+        height: 1px;
+        background: #e4e4e4;
+        display: block;
+        margin: auto;
+    }
+    .nvc-panel1-continuation img.w-10{
+        width: 70% !important;
+        padding: 0.5rem;
+    }
+    .nvc-panel1-continuation img.w-25{
+        width: 50% !important;
+    }
+    .carousel-panel-continuation{
+        position: relative;
+    }
+    .nvc-panel1-continuation .content h6{
+        font-weight: 600;
+    }
+    .line-height-md-1-5{
+        line-height: 1;
+    }
+    .nvc-panel5-text:before,
+    .nvc-panel5-text:after{
+        width: 20%;
+    }
+    .nvc-panel5-paragraph p:before,
+    .nvc-panel5-paragraph p:after{
+        font-size: 2rem;
+    }
+}
