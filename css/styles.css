@@ -341,26 +341,15 @@ body.hide{
     text-decoration: underline;
 }
 /*======== Panel 5 CSS goes here =======*/
-.nvc-panel5-text:before,
-.nvc-panel5-text:after{
-    content: '';
-    width: 35%;
-    height: 2px;
-    background: #000;
-    position: absolute;
-    top: calc(50% - 1px);
-}
-.nvc-panel5-text:before{
-    left: 0;
-}
-.nvc-panel5-text:after{
-    right: 0;
+.nvc-panel5-paragraph p{
+    font-weight: 0.8rem;
+    line-height: 2;
 }
 .nvc-panel5-paragraph p:before,
 .nvc-panel5-paragraph p:after{
     position: absolute;
-    top: 15px;
-    font-size: 4rem;
+    top: 20px;
+    font-size: 3rem;
     line-height: 0;
     font-weight: 600;
     font-family: sans-serif;
@@ -415,6 +404,12 @@ body.hide{
     -webkit-box-shadow: 0 0 10px 0 #3e95e5;
     -moz-box-shadow: 0 0 10px 0 #3e95e5;
     box-shadow: 0 0 10px 0 #3e95e5;
+}
+.custom-carousel .carousel-control-next-icon,
+.custom-carousel .carousel-control-prev-icon{
+    width: 60px;
+    height: 35%;
+    background: none;
 }
 .detailview-carousel .carousel-item{
     opacity: 0;
@@ -552,7 +547,24 @@ body.hide{
     top: 0;
     left: 0;
     width: 92%;
+    background: transparent;
     z-index: 10;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+.md-menu .logo img{
+    width: 8rem;
+}
+.md-menu.toggled{
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 .md-menu .menu-content a{
     color: #252525;
@@ -582,6 +594,35 @@ body.hide{
 .md-menu .menu-content a:hover:after{
     width: 90%;
 }
+/*========= footer css starts here =====*/
+.footer .logo img{
+    width: 8rem;
+    margin: auto;
+    display: block;
+}
+.footer .brand a{
+    padding: 0 0.4rem;
+}
+.footer .brand a{
+    border: 2px solid #252525;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 0.4rem;
+    padding: 0;
+}
+.footer .brand img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    -o-object-fit: contain;
+    padding: 6px;
+}
+.footer .signature h6{
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+/*========= footer css ends here =======*/
 /*======== Media queries goes here =====*/
 /*======== progress bar css goes here ====*/
 .overlay{
@@ -677,5 +718,13 @@ body.hide{
     }
     .nvc-panel1 .heading{
         font-size: 1.4rem;
+    }
+    .footer .brand a{
+        border-width: 1px;
+    }
+    .footer .brand img{
+        width: 20px;
+        height: 20px;
+        padding: 4px;
     }
 }

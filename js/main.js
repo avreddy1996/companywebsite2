@@ -142,6 +142,14 @@ $(window).scroll(function () {
     function getElementHeight(elem) {
         return $(elem)[0].offsetHeight;
     }
+    function menuScrolled() {
+        return $(window).scrollTop()>10
+    }
+    if($(window).scrollTop()>10){
+        $(document.getElementById('mdMenu')).addClass('toggled');
+    }else{
+        $(document.getElementById('mdMenu')).removeClass('toggled');
+    }
     if(elementScrolled('#panel1')){
         document.getElementById('panel1Image').style.transform = 'translateY('+getTransformVal('#panel1')+'%)';
     }

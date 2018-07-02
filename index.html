@@ -45,9 +45,9 @@
         </ul>
     </div>
 </div>
-<div class="nvc-nav d-none d-md-flex md-menu row align-items-center justify-content-space-between">
+<div class="nvc-nav d-none d-md-flex md-menu row align-items-center justify-content-space-between" id="mdMenu">
     <div class="logo col-3 ml-4 pl-4 pt-3 pb-3">
-        <img src="img/vipani_logo.png" class="w-50" alt="logo">
+        <img src="img/vipani_logo.png" alt="logo">
     </div>
     <div class="menu-content">
         <a href="#">Home</a>
@@ -280,27 +280,14 @@
         <div class="custom-carousel carousel slide pb-4" data-ride="carousel" id="panelCarousel">
             <!--carousel indicators-->
             <ol class="carousel-indicators">
-                <li data-target="#panelCarousel" data-slide-to="0"></li>
+                <li data-target="#panelCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#panelCarousel" data-slide-to="1"></li>
-                <li data-target="#panelCarousel" data-slide-to="2" class="active"></li>
+                <li data-target="#panelCarousel" data-slide-to="2"></li>
                 <li data-target="#panelCarousel" data-slide-to="3"></li>
                 <li data-target="#panelCarousel" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item text-center">
-                    <div>
-                        <h4 class="panel-header">Trace items to origin</h4>
-                        <h3 class="panel-subheader">through out its various transforms</h3>
-                    </div>
-                    <div class="nvc-background-right nvc-wid-100 square-image  mb-4 mt-4">
-                        <img class="nvc-wid-100 p-4" src="img/traceToOrigin.png" alt="trace to origin">
-                    </div>
-                    <div class="pl-5 pr-5">
-                        <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
-                        <p>Trace your item from the retails shop to the raw materials used.</p>
-                    </div>
-                </div>
-                <div class="carousel-item text-center">
+                <div class="carousel-item active text-center">
                     <div>
                         <h4 class="panel-header">Simplified Product recalls</h4>
                         <h3 class="panel-subheader">through forward tracability</h3>
@@ -313,13 +300,13 @@
                         <p>Trace your item from the retails shop to the raw materials used.</p>
                     </div>
                 </div>
-                <div class="carousel-item active text-center">
+                <div class="carousel-item text-center">
                     <div>
-                        <h4 class="panel-header">Multi-horizon smart insights</h4>
-                        <h3 class="panel-subheader">from strong perspective analysis</h3>
+                        <h4 class="panel-header">Trace items to origin</h4>
+                        <h3 class="panel-subheader">through out its various transforms</h3>
                     </div>
-                    <div class="nvc-background-right square-image mb-4 mt-4">
-                        <img class="nvc-wid-100 p-3" src="img/smart-insights.png" alt="smart-insights">
+                    <div class="nvc-background-right nvc-wid-100 square-image  mb-4 mt-4">
+                        <img class="nvc-wid-100 p-4" src="img/traceToOrigin.png" alt="trace to origin">
                     </div>
                     <div class="pl-5 pr-5">
                         <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
@@ -341,6 +328,19 @@
                 </div>
                 <div class="carousel-item text-center">
                     <div>
+                        <h4 class="panel-header">Multi-horizon smart insights</h4>
+                        <h3 class="panel-subheader">from strong perspective analysis</h3>
+                    </div>
+                    <div class="nvc-background-right square-image mb-4 mt-4">
+                        <img class="nvc-wid-100 p-3" src="img/smart-insights.png" alt="smart-insights">
+                    </div>
+                    <div class="pl-5 pr-5">
+                        <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
+                        <p>Trace your item from the retails shop to the raw materials used.</p>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <div>
                         <h4 class="panel-header">Automate your business</h4>
                         <h3 class="panel-subheader">and grease your economic wheel</h3>
                     </div>
@@ -353,11 +353,20 @@
                     </div>
                 </div>
             </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control-prev" href="#panelCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"><img src="img/arrow_left.svg" class="nvc-wid-100" alt="left control"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control-next" href="#panelCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"><img src="img/arrow_right.svg" class="nvc-wid-100" alt="right control"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
     <div class="nvc-section-divider" id="vision"></div>
     <h3 class="font-weight-bold text-center mt-3 mb-3 mt-md-5 mb-md-0 d-none d-md-block">Some more reasons being everyone&rsquo;s 1<sup>st</sup> preference</h3>
-    <div class="container-fluid detailview-carousel mb-5 row align-items-center justify-content-end position-relative p-0">
+    <div class="container-fluid detailview-carousel row align-items-center justify-content-end position-relative p-0">
         <div class="d-none d-md-block col-md-4 pb-5 mb-5 pl-0">
             <div class="carousel slide" data-ride="carousel" id="textCarousel">
                 <div class="carousel-inner">
@@ -459,29 +468,70 @@
             </div>
         </div>
     </div>
-    <div class="container row nvc-panel5 mb-5" id="testimonials">
-        <div class="col-md-12 pb-4">
+    <div class="container row nvc-panel5 mb-2 mt-4 mt-md-0" id="testimonials">
+        <div class="col-md-12">
             <div class="nvc-panel5-text position-relative">
-                <h4 class="nvc-theme-color font-weight-bold text-center">Testimonials</h4>
+                <h5 class="font-weight-bold text-center">Hear us from our happy customers</h5>
             </div>
         </div>
-        <div class="col-md-12">
-            <div class="nvc-panel5-paragraph position-relative mt-3">
-                <p class="text-center col-md-6 mr-auto ml-auto position-relative">As a manufacture, Valuchain provides the ultimate Insight about the sale happening in Real time</p>
-                <h5 class="font-weight-bold font-italic text-center">- Kshetra Agriculture Products</h5>
+        <div class="carousel slide col-md-12 custom-carousel pb-4" id="testimonialCarousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="col-md-12">
+                        <div class="nvc-panel5-paragraph position-relative mt-3">
+                            <p class="text-center col-md-6 mr-auto ml-auto position-relative">As a manufacture, Valuchain provides the ultimate Insight about the sale happening in Real time</p>
+                            <h6 class="font-weight-bold font-italic text-center">- Kshetra Agriculture Products</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-12">
+                        <div class="nvc-panel5-paragraph position-relative mt-3">
+                            <p class="text-center col-md-6 mr-auto ml-auto position-relative">As a manufacture, Valuchain provides the ultimate Insight about the sale happening in Real time</p>
+                            <h6 class="font-weight-bold font-italic text-center">- Kshetra Agriculture Products</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-12">
+                        <div class="nvc-panel5-paragraph position-relative mt-3">
+                            <p class="text-center col-md-6 mr-auto ml-auto position-relative">As a manufacture, Valuchain provides the ultimate Insight about the sale happening in Real time</p>
+                            <h6 class="font-weight-bold font-italic text-center">- Kshetra Agriculture Products</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="container-fluid p-0 panel-contact-us row" id="contact">
-        <div class="col-md-6 gradient-to-right pt-4 pb-4">
+        <div class="col-md-6 gradient-to-right pt-4 pb-4 order-1 order-md-0">
             <h5 class="font-weight-bold">Contact Us</h5>
             <h6>&#9743; 080 4125 2425</h6>
             <h6>&#9993; info@nvipani.com</h6>
             <p>#526, Ground Floor, 7th Cross, HAL 3rd stage, Jeevan Bheema Nagar,<br>Bangalore  - 560075, Karnataka, India.</p>
         </div>
-        <div class="col-md-6 contact-map p-0">
+        <div class="col-md-6 contact-map p-0 order-0 order-md-1">
             <!------ google map for company location ------->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.037050957526!2d77.64922831430455!3d12.96948099085727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14002f5c7827%3A0x9ec899fe07f2ada7!2snVipani+Technology+Solutions+Private+Limited!5e0!3m2!1sen!2sin!4v1530267283162" class="nvc-wid-100 nvc-height-100" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="footer row align-items-center p-2">
+        <div class="logo d-block d-md-none col-md-6 col-12">
+            <img src="img/vipani_logo.png" alt="logo" >
+        </div>
+        <div class=" signature col-md-6 col-12 order-1 order-md-0 text-md-left text-center pt-3 pb-1 pt-md-0 pb-md-0">
+            <h6 class="m-0">Copyrights resered something</h6>
+        </div>
+        <div class="brand col-md-6 col-12  justify-content-md-end justify-content-center d-flex order-0 order-md-1 pt-3 pt-md-0">
+            <a href="#"><img src="img/facebook-letter-logo.svg"></a>
+            <a href="#"><img src="img/linkedin-logo.svg"></a>
+            <a href="#"><img src="img/behance-logo.svg"></a>
+            <a href="#"><img src="img/youtube-play-button.svg"></a>
         </div>
     </div>
 </div>
