@@ -134,6 +134,9 @@ body.hide{
 .justify-content-space-around{
     justify-content: space-around;
 }
+.justify-content-space-between{
+    justify-content: space-between;
+}
 .panel-header{
     font-size: 2rem;
     font-weight: 900;
@@ -161,17 +164,21 @@ body.hide{
 /*======== Panel 1 CSS Goes here =======*/
 .nvc-panel1{
     height: 100%;
-    /*background-image: url('../img/illustration-web-bg.png');
-    -webkit-background-size: contain;
-    background-size: contain;
-    background-repeat: no-repeat;*/
-    /*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0c4cb4+0,3e95e5+75,3e95e5+75,ffffff+100 *!
-    background: #0c4cb4; !* Old browsers *!
-    background: -moz-linear-gradient(top, #0c4cb4 0%, #3e95e5 75%, #3e95e5 75%, #ffffff 100%); !* FF3.6-15 *!
-    background: -webkit-linear-gradient(top, #0c4cb4 0%,#3e95e5 75%,#3e95e5 75%,#ffffff 100%); !* Chrome10-25,Safari5.1-6 *!
-    background: linear-gradient(to bottom, #0c4cb4 0%,#3e95e5 75%,#3e95e5 75%,#ffffff 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c4cb4', endColorstr='#ffffff',GradientType=0 ); !* IE6-9 *!
-    !*background: linear-gradient(to bottom,#0C4CB4, #3E95E5);*!*/
+}
+.nvc-panel1 .heading{
+    font-size: 2rem;
+}
+.total-content{
+    height: 100%;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+}
+.total-content.toggled{
+    -ms-filter: blur(4px);
+    filter: blur(4px);
 }
 .nvc-panel1-container{
     height: 100%;
@@ -434,7 +441,7 @@ body.hide{
 }
 /*======== ham menu css starts here =====*/
 .ham-menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
@@ -448,11 +455,11 @@ body.hide{
     width: 20px;
     height: 2px;
     background: #252525;
-    -webkit-transition: all ease-in 0.4s;
-    -moz-transition: all ease-in 0.4s;
-    -ms-transition: all ease-in 0.4s;
-    -o-transition: all ease-in 0.4s;
-    transition: all ease-in 0.4s;
+    -webkit-transition: all ease-in 0.2s;
+    -moz-transition: all ease-in 0.2s;
+    -ms-transition: all ease-in 0.2s;
+    -o-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s;
 }
 .ham-menu ul li.menu-bar-1{
     -webkit-transform: translateY(-3.75px);
@@ -493,7 +500,7 @@ body.hide{
     width: 0;
 }
 .xs-menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -513,7 +520,7 @@ body.hide{
     transform: translateY(-100%);
 }
 .xs-menu.toggled{
-    opacity: 1;
+    opacity: 0.8;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -529,6 +536,51 @@ body.hide{
     margin: 10px auto;
     width: 30%;
     z-index: 2;
+}
+.xs-menu .list-group{
+    width: 40%;
+    margin: auto;
+}
+.xs-menu .list-group a{
+    color: #252525;
+    font-weight: 600;
+    font-style: 1.2rem;
+}
+/*===== menu css here ====*/
+.md-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 92%;
+    z-index: 10;
+}
+.md-menu .menu-content a{
+    color: #252525;
+    padding: 0 0.6rem;
+    font-size: 0.9rem;
+    position: relative;
+}
+.md-menu .menu-content a:hover{
+    text-decoration: none;
+}
+.md-menu .menu-content a:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #3e95e5;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+    -ms-transition: all ease-in-out 0.2s;
+    -o-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+}
+.md-menu .menu-content a:hover:after{
+    width: 90%;
 }
 /*======== Media queries goes here =====*/
 /*======== progress bar css goes here ====*/
@@ -622,5 +674,8 @@ body.hide{
     .nvc-panel5-paragraph p:before,
     .nvc-panel5-paragraph p:after{
         font-size: 2rem;
+    }
+    .nvc-panel1 .heading{
+        font-size: 1.4rem;
     }
 }

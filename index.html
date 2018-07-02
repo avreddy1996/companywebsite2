@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>nVipani - Corporate</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="Description" content="an advanced blockchain product for your supplychain" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -23,482 +23,468 @@
     <div id="progstat" class="progress-stats"></div>
     <div id="progress" class="progress-line"></div>
 </div>
-<div id="canvasContainer" class="nvc-wid-100 nvc-panel1">
-    <canvas id="backgroundCanvas" class="position-absolute d-none d-md-block"></canvas>
-    <img src="img/warehouse.png" class="d-none" id="warehouseImage">
-    <img src="img/ship.png" class="d-none" id="shipImage">
-    <img src="img/plane-1.png" class="d-none" id="planeImage">
-    <img src="img/manufacturer.png" class="d-none" id="manufacturerImage">
-    <!--<nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand nvc-header-image" href="#"><img src="img/vipani_logo.png" ></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbar">
-            <ul class="navbar-nav ml-auto ">
-                <li class="nav-item">
-                    <a class="nav-link" href="#products">Products</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#career">Career</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#blog">Blogs</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>-->
-    <div class="nvc-nav w-75 d-none d-md-block">
-        <div class="logo">
-            <img src="img/vipani_logo.png">
-        </div>
-
+<div class="d-block d-md-none">
+    <div class="ham-menu" id="hamMenu">
+        <ul>
+            <li class="menu-bar-1"></li>
+            <li class="menu-bar-2"></li>
+            <li class="menu-bar-3"></li>
+        </ul>
     </div>
-    <div class="d-block d-md-none">
-        <div class="ham-menu" id="hamMenu">
-            <ul>
-                <li class="menu-bar-1"></li>
-                <li class="menu-bar-2"></li>
-                <li class="menu-bar-3"></li>
-            </ul>
-        </div>
-        <div class="brand-logo">
-            <img src="img/vipani_logo.png" alt="logo" class="nvc-wid-100">
-        </div>
-        <div class="xs-menu" id="xsMenu">
-            <ul class="list-group list-group-flush mt-5" id="menuList">
-                <li class="list-group-item"><a href="#"><h6>Home</h6></a></li>
-                <li class="list-group-item"><a href="#products"><h6>Products</h6></a></li>
-                <li class="list-group-item"><a href="#mission"><h6>Mission</h6></a></li>
-                <li class="list-group-item"><a href="#vision"><h6>vision</h6></a></li>
-                <li class="list-group-item"><a href="#testimonials"><h6>testimonial</h6></a></li>
-                <li class="list-group-item"><a href="#contact"><h6>contact</h6></a></li>
-            </ul>
-        </div>
+    <div class="brand-logo">
+        <img src="img/vipani_logo.png" alt="logo" class="nvc-wid-100">
     </div>
-    <div class="container-fluid row nvc-panel1-container p-0 mt-5">
-        <div class="col-md-6 p-0">
-            <div class="text-center text-md-left p-0 p-md-4 ml-0 ml-md-4 font-weight-bold mt-4 line-height-md-1-5">
-                <h5 class="font-weight-bold line-height-md-1-5">Total control on your<br>supply chain ecosystem</h5>
-                <h6 class="d-none d-md-block line-height-md-1-5">Deter Illicit trade, Counterfiets,Pilferage<br>through out your supply chain</h6>
-                <button type="button" class="btn nvc-shape-pill gradient-to-right  font-weight-bold">Try for free</button>
-                <img src="img/illustration.png" class="nvc-wid-100 d-block d-md-none margin-top-3" alt="illustration">
-            </div>
-        </div>
+    <div class="xs-menu" id="xsMenu">
+        <ul class="list-group list-group-flush mt-5 pt-5 text-center" id="menuList">
+            <li class="list-group-item"><a href="#">Home</a></li>
+            <li class="list-group-item"><a href="#products">Products</a></li>
+            <li class="list-group-item"><a href="#mission">Mission</a></li>
+            <li class="list-group-item"><a href="#vision">Vision</a></li>
+            <li class="list-group-item"><a href="#testimonials">Testimonial</a></li>
+            <li class="list-group-item"><a href="#contact">Contact</a></li>
+        </ul>
     </div>
 </div>
-<div class="nvc-section-divider"></div>
-<div class="container-fluid row nvc-panel1-continuation text-center align-items-center justify-content-center" id="products">
-    <div class="col-md-12 col-12">
-        <img class="w-25 pt-4 pb-4" src="img/logo.png" alt="logo">
+<div class="nvc-nav d-none d-md-flex md-menu row align-items-center justify-content-space-between">
+    <div class="logo col-3 ml-4 pl-4 pt-3 pb-3">
+        <img src="img/vipani_logo.png" class="w-50" alt="logo">
     </div>
-    <h5 class="col-md-12 col-12 pb-4">Everything you need to be profitable, productive and proactive</h5>
-    <div class="col-12 col-md-4 d-block d-md-none">
-    <img src="img/phone.png" class="w-75 p-3" alt="phone">
-    </div>
-    <div class="col-12 col-md-8 row align-items-center content d-flex d-md-none">
-        <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
-            <img src="img/anticounterfiets.png" class="w-10 p-3 p-md-0" alt="anti counterfieting">
-            <h6>Anti<br class="d-block d-md-none">Counterfits</h6>
-        </div>
-        <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
-            <img src="img/productrecall.png" class="w-10 p-2" alt="Product Recalls">
-            <h6>Product<br class="d-block d-md-none">recalls</h6>
-        </div>
-        <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
-            <img src="img/forwardtracing.png" class="w-10" alt="Forward tracing">
-            <h6>Forward<br class="d-block d-md-none">tracing</h6>
-        </div>
-        <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
-            <img src="img/insights.png" class="w-10" alt="Smart Insights">
-            <h6>Smart<br class="d-block d-md-none">Insights</h6>
-        </div>
-        <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
-            <img src="img/trace.png" class="w-10" alt="Trace to Origin">
-            <h6>Trace to<br class="d-block d-md-none">origin</h6>
-        </div>
-        <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
-            <img src="img/smartcontract.png" class="w-10" alt="smart contracts">
-            <h6>Smart<br class="d-block d-md-none">contracts</h6>
-        </div>
-    </div>
-    <div class="col-12 col-md-8 d-none d-md-block panel-2-timeline">
-        <div class="timeline-header">
-            <div class="item active" id="timelineItem1">
-                <img src="img/anticounterfiets.png" class="" alt="anti counterfieting">
-            </div>
-            <div class="item" id="timelineItem2">
-                <img src="img/productrecall.png" class="" alt="Product Recalls">
-            </div>
-            <div class="item" id="timelineItem3">
-                <img src="img/forwardtracing.png" class="" alt="Forward tracing">
-            </div>
-            <div class="item" id="timelineItem4">
-                <img src="img/insights.png" class="" alt="Smart Insights">
-            </div>
-            <div class="item" id="timelineItem5">
-                <img src="img/trace.png" class="" alt="Trace to Origin">
-            </div>
-            <div class="item" id="timelineItem6">
-                <img src="img/smartcontract.png" class="" alt="smart contracts">
-            </div>
-        </div>
-        <div class="timeline-container">
-            <div class="item active" id="timelineContainer1">
-                <h5 class="font-weight-bold pt-5">Anti Counterfiets</h5>
-                <p class="p-5">Smart tracking and end-to-end traceability of every unit ensures that no counterfeits enter the supply chain.</p>
-            </div>
-            <div class="item" id="timelineContainer2">
-                <h5 class="font-weight-bold pt-5">Product recall</h5>
-                <p class="p-5">Gone will be the days of costly product recalls. We make product recalls easy as every unit is accounted for in the system.</p>
-            </div>
-            <div class="item" id="timelineContainer3">
-                <h5 class="font-weight-bold pt-5">Forward Tracing</h5>
-                <p class="p-5">As a manufacturer, know where your products are. Get data about where most sales happens. Ensure that unauthorised sales do not take place.</p>
-            </div>
-            <div class="item" id="timelineContainer4">
-                <h5 class="font-weight-bold pt-5">Smart Insights</h5>
-                <p class="p-5">Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
-            </div>
-            <div class="item" id="timelineContainer5">
-                <h5 class="font-weight-bold pt-5">Trace to Origin</h5>
-                <p class="p-5">Trace how a product reached you. You can see the path the product took to reach you from the moment it was manufactured.</p>
-            </div>
-            <div class="item" id="timelineContainer6">
-                <h5 class="font-weight-bold pt-5">Smart Contracts</h5>
-                <p class="p-5">Irreversible and trackable contracts between you and your trading partner are executed automatically.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-md-6 pt-4 pb-4">
-        <button class="btn nvc-shape-pill gradient-to-right">Explore</button>
+    <div class="menu-content">
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#mission">Mission</a>
+        <a href="#vision">Vision</a>
+        <a href="#testimonials">Testimonial</a>
+        <a href="#contact">Contact</a>
     </div>
 </div>
-<div class="nvc-section-divider" id="mission"></div>
-<div class="d-none d-md-block">
-    <div class="nvc-panel4 nvc-background-left container mt-5" id="panel1">
-        <div class="p-2 content flex-column d-flex nvc-height-100">
-            <div class="row flex-8 m-0 pl-md-5 pr-md-5">
-                <div class="col-md-5 row align-items-center">
-                    <img class="nvc-wid-100 mb-4 mt-4" src="img/traceToOrigin.png" alt="trace to origin" id="panel1Image">
+<div class="total-content" id="totalContent">
+    <div id="canvasContainer" class="nvc-wid-100 nvc-panel1">
+        <canvas id="backgroundCanvas" class="position-absolute d-none d-md-block"></canvas>
+        <img src="img/warehouse.png" class="d-none" id="warehouseImage">
+        <img src="img/ship.png" class="d-none" id="shipImage">
+        <img src="img/plane-1.png" class="d-none" id="planeImage">
+        <img src="img/manufacturer.png" class="d-none" id="manufacturerImage">
+        <div class="container-fluid row nvc-panel1-container pt-5 pl-0 pr-0 pb-0">
+            <div class="col-md-6 p-0">
+                <div class="text-center text-md-left p-0 p-md-4 ml-0 ml-md-4 font-weight-bold mt-4 line-height-md-1-5">
+                    <h5 class="font-weight-bold line-height-md-1-5 heading pb-2 pb-md-0">Total control on your<br>supply chain ecosystem</h5>
+                    <h6 class="d-none d-md-block line-height-md-1-5 pt-3 pb-3">Deter Illicit trade, Counterfiets,Pilferage<br>through out your supply chain</h6>
+                    <button type="button" class="btn nvc-shape-pill gradient-to-right  font-weight-bold">Try for free</button>
+                    <img src="img/illustration.png" class="nvc-wid-100 d-block d-md-none margin-top-3" alt="illustration">
                 </div>
-                <div class="col-md-7 text-center text-md-right flex-column d-flex justify-content-space-around panel-column">
+            </div>
+        </div>
+    </div>
+    <div class="nvc-section-divider"></div>
+    <div class="container-fluid row nvc-panel1-continuation text-center align-items-center justify-content-center" id="products">
+        <div class="col-md-12 col-12">
+            <img class="w-25 pt-4 pb-4" src="img/logo.png" alt="logo">
+        </div>
+        <h5 class="col-md-12 col-12 pb-4">Everything you need to be profitable, productive and proactive</h5>
+        <div class="col-12 col-md-4 d-block d-md-none">
+            <img src="img/phone.png" class="w-75 p-3" alt="phone">
+        </div>
+        <div class="col-12 col-md-8 row align-items-center content d-flex d-md-none">
+            <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
+                <img src="img/anticounterfiets.png" class="w-10 p-3 p-md-0" alt="anti counterfieting">
+                <h6>Anti<br class="d-block d-md-none">Counterfits</h6>
+            </div>
+            <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
+                <img src="img/productrecall.png" class="w-10 p-2" alt="Product Recalls">
+                <h6>Product<br class="d-block d-md-none">recalls</h6>
+            </div>
+            <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
+                <img src="img/forwardtracing.png" class="w-10" alt="Forward tracing">
+                <h6>Forward<br class="d-block d-md-none">tracing</h6>
+            </div>
+            <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
+                <img src="img/insights.png" class="w-10" alt="Smart Insights">
+                <h6>Smart<br class="d-block d-md-none">Insights</h6>
+            </div>
+            <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
+                <img src="img/trace.png" class="w-10" alt="Trace to Origin">
+                <h6>Trace to<br class="d-block d-md-none">origin</h6>
+            </div>
+            <div class="col-4 col-md-12 d-block d-md-flex align-items-center pt-2 pb-2">
+                <img src="img/smartcontract.png" class="w-10" alt="smart contracts">
+                <h6>Smart<br class="d-block d-md-none">contracts</h6>
+            </div>
+        </div>
+        <div class="col-12 col-md-8 d-none d-md-block panel-2-timeline">
+            <div class="timeline-header">
+                <div class="item active" id="timelineItem1">
+                    <img src="img/anticounterfiets.png" class="" alt="anti counterfieting">
+                </div>
+                <div class="item" id="timelineItem2">
+                    <img src="img/productrecall.png" class="" alt="Product Recalls">
+                </div>
+                <div class="item" id="timelineItem3">
+                    <img src="img/forwardtracing.png" class="" alt="Forward tracing">
+                </div>
+                <div class="item" id="timelineItem4">
+                    <img src="img/insights.png" class="" alt="Smart Insights">
+                </div>
+                <div class="item" id="timelineItem5">
+                    <img src="img/trace.png" class="" alt="Trace to Origin">
+                </div>
+                <div class="item" id="timelineItem6">
+                    <img src="img/smartcontract.png" class="" alt="smart contracts">
+                </div>
+            </div>
+            <div class="timeline-container">
+                <div class="item active" id="timelineContainer1">
+                    <h5 class="font-weight-bold pt-5">Anti Counterfiets</h5>
+                    <p class="p-5">Smart tracking and end-to-end traceability of every unit ensures that no counterfeits enter the supply chain.</p>
+                </div>
+                <div class="item" id="timelineContainer2">
+                    <h5 class="font-weight-bold pt-5">Product recall</h5>
+                    <p class="p-5">Gone will be the days of costly product recalls. We make product recalls easy as every unit is accounted for in the system.</p>
+                </div>
+                <div class="item" id="timelineContainer3">
+                    <h5 class="font-weight-bold pt-5">Forward Tracing</h5>
+                    <p class="p-5">As a manufacturer, know where your products are. Get data about where most sales happens. Ensure that unauthorised sales do not take place.</p>
+                </div>
+                <div class="item" id="timelineContainer4">
+                    <h5 class="font-weight-bold pt-5">Smart Insights</h5>
+                    <p class="p-5">Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
+                </div>
+                <div class="item" id="timelineContainer5">
+                    <h5 class="font-weight-bold pt-5">Trace to Origin</h5>
+                    <p class="p-5">Trace how a product reached you. You can see the path the product took to reach you from the moment it was manufactured.</p>
+                </div>
+                <div class="item" id="timelineContainer6">
+                    <h5 class="font-weight-bold pt-5">Smart Contracts</h5>
+                    <p class="p-5">Irreversible and trackable contracts between you and your trading partner are executed automatically.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 pt-4 pb-4">
+            <button class="btn nvc-shape-pill gradient-to-right">Explore</button>
+        </div>
+    </div>
+    <div class="nvc-section-divider" id="mission"></div>
+    <div class="d-none d-md-block">
+        <div class="nvc-panel4 nvc-background-left container mt-5" id="panel1">
+            <div class="p-2 content flex-column d-flex nvc-height-100">
+                <div class="row flex-8 m-0 pl-md-5 pr-md-5">
+                    <div class="col-md-5 row align-items-center">
+                        <img class="nvc-wid-100 mb-4 mt-4" src="img/traceToOrigin.png" alt="trace to origin" id="panel1Image">
+                    </div>
+                    <div class="col-md-7 text-center text-md-right flex-column d-flex justify-content-space-around panel-column">
+                        <div>
+                            <h4 class="panel-header">Trace items to origin</h4>
+                            <h3 class="panel-subheader">through out its various transforms</h3>
+                        </div>
+                        <div>
+                            <h6 > Raw materials utilised</h6>
+                            <h6 > Processing happened</h6>
+                            <h6 > Stolen goods detection</h6>
+                            <h6 > Stock Diversion detection</h6>
+                            <h6 > Procurement Analysis</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nvc-panel3 nvc-background-right container mb-5" id="panel2">
+            <div class="p-2 content flex-column d-flex nvc-height-100">
+                <div class="row flex-8 m-0">
+                    <div class="col-md-7 pl-5 flex-column d-flex justify-content-space-evenly panel-column">
+                        <div>
+                            <h4 class="mt-3 panel-header">Simplified Product recalls</h4>
+                            <h3 class="panel-subheader">through forward tracability</h3>
+                        </div>
+                        <div>
+                            <h6>Global Sales Picture</h6>
+                            <h6>Unintended Sales Detection</h6>
+                            <h6>Monotize Promotional activities</h6>
+                            <h6>Targeted returns management</h6>
+                            <h6>Effortless outbound logistics</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-5 row align-items-center">
+                        <img class="nvc-wid-100 " src="img/recall.png" alt="recall" id="panel2Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nvc-panel4 nvc-background-left container mb-5" id="panel3">
+            <div class="p-2 content flex-column d-flex nvc-height-100">
+                <div class="row flex-8 m-0">
+                    <div class="col-md-5 row align-items-center">
+                        <img class="nvc-wid-100" src="img/smart-insights.png" alt="smart-insights" id="panel3Image">
+                    </div>
+                    <div class="col-md-7 text-right pr-5 flex-column d-flex justify-content-space-evenly panel-column">
+                        <div>
+                            <h4 class="panel-header">Multi-horizon smart insights</h4>
+                            <h3 class="panel-subheader">from strong perspective analysis</h3>
+                        </div>
+                        <div>
+                            <h6>Pilferage Alerts</h6>
+                            <h6>Expiry Detection</h6>
+                            <h6>Stolen goods detection</h6>
+                            <h6>Stock Diversion detection</h6>
+                            <h6>Procurement Analysis</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nvc-panel3 nvc-background-right container mb-5" id="panel4">
+            <div class="p-2 content flex-column d-flex nvc-height-100">
+                <div class="row flex-8 m-0">
+                    <div class="col-md-7 flex-column pl-5 d-flex justify-content-space-evenly panel-column">
+                        <div>
+                            <h4 class="mt-3 panel-header">Automated Smart contract</h4>
+                            <h3 class="panel-subheader">ingrains trust with customers</h3>
+                        </div>
+                        <div>
+                            <h6>Global Sales Picture</h6>
+                            <h6>Unintended Sales Detection</h6>
+                            <h6>Trading partner management</h6>
+                            <h6>Warehouse Management</h6>
+                            <h6>Logistic Management</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-5 row align-items-center">
+                        <img class="nvc-wid-100 " src="img/smart-contracts.png" alt="smart contracts" id="panel4Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nvc-panel2  nvc-background-left container mb-5" id="panel5">
+            <div class="p-2 content flex-column d-flex">
+                <div class="row flex-8 m-0">
+                    <div class="col-md-6 row align-items-center">
+                        <img class="nvc-wid-100" src="img/automation.png" alt="automation" id="panel5Image">
+                    </div>
+                    <div class="col-md-6 pr-5 text-right flex-column d-flex justify-content-space-evenly panel-column">
+                        <div>
+                            <h4 class="panel-header">Automate your business</h4>
+                            <h3 class="panel-subheader">and grease your economic wheel</h3>
+                        </div>
+                        <div>
+                            <h6>Stock Management</h6>
+                            <h6>Order Management</h6>
+                            <h6>Trading partner management</h6>
+                            <h6>Warehouse Management</h6>
+                            <h6>Logistic Management</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-md-none d-block mt-4 mb-4">
+        <div class="custom-carousel carousel slide pb-4" data-ride="carousel" id="panelCarousel">
+            <!--carousel indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#panelCarousel" data-slide-to="0"></li>
+                <li data-target="#panelCarousel" data-slide-to="1"></li>
+                <li data-target="#panelCarousel" data-slide-to="2" class="active"></li>
+                <li data-target="#panelCarousel" data-slide-to="3"></li>
+                <li data-target="#panelCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item text-center">
                     <div>
                         <h4 class="panel-header">Trace items to origin</h4>
                         <h3 class="panel-subheader">through out its various transforms</h3>
                     </div>
-                    <div>
-                        <h6 > Raw materials utilised</h6>
-                        <h6 > Processing happened</h6>
-                        <h6 > Stolen goods detection</h6>
-                        <h6 > Stock Diversion detection</h6>
-                        <h6 > Procurement Analysis</h6>
+                    <div class="nvc-background-right nvc-wid-100 square-image  mb-4 mt-4">
+                        <img class="nvc-wid-100 p-4" src="img/traceToOrigin.png" alt="trace to origin">
+                    </div>
+                    <div class="pl-5 pr-5">
+                        <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
+                        <p>Trace your item from the retails shop to the raw materials used.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="nvc-panel3 nvc-background-right container mb-5" id="panel2">
-        <div class="p-2 content flex-column d-flex nvc-height-100">
-            <div class="row flex-8 m-0">
-                <div class="col-md-7 pl-5 flex-column d-flex justify-content-space-evenly panel-column">
+                <div class="carousel-item text-center">
                     <div>
-                        <h4 class="mt-3 panel-header">Simplified Product recalls</h4>
+                        <h4 class="panel-header">Simplified Product recalls</h4>
                         <h3 class="panel-subheader">through forward tracability</h3>
                     </div>
-                    <div>
-                        <h6>Global Sales Picture</h6>
-                        <h6>Unintended Sales Detection</h6>
-                        <h6>Monotize Promotional activities</h6>
-                        <h6>Targeted returns management</h6>
-                        <h6>Effortless outbound logistics</h6>
+                    <div class="nvc-background-right square-image mb-4 mt-4">
+                        <img class="nvc-wid-100" src="img/recall.png" alt="recall">
+                    </div>
+                    <div class="pl-5 pr-5">
+                        <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
+                        <p>Trace your item from the retails shop to the raw materials used.</p>
                     </div>
                 </div>
-                <div class="col-md-5 row align-items-center">
-                    <img class="nvc-wid-100 " src="img/recall.png" alt="recall" id="panel2Image">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="nvc-panel4 nvc-background-left container mb-5" id="panel3">
-        <div class="p-2 content flex-column d-flex nvc-height-100">
-            <div class="row flex-8 m-0">
-                <div class="col-md-5 row align-items-center">
-                    <img class="nvc-wid-100" src="img/smart-insights.png" alt="smart-insights" id="panel3Image">
-                </div>
-                <div class="col-md-7 text-right pr-5 flex-column d-flex justify-content-space-evenly panel-column">
+                <div class="carousel-item active text-center">
                     <div>
                         <h4 class="panel-header">Multi-horizon smart insights</h4>
                         <h3 class="panel-subheader">from strong perspective analysis</h3>
                     </div>
-                    <div>
-                        <h6>Pilferage Alerts</h6>
-                        <h6>Expiry Detection</h6>
-                        <h6>Stolen goods detection</h6>
-                        <h6>Stock Diversion detection</h6>
-                        <h6>Procurement Analysis</h6>
+                    <div class="nvc-background-right square-image mb-4 mt-4">
+                        <img class="nvc-wid-100 p-3" src="img/smart-insights.png" alt="smart-insights">
+                    </div>
+                    <div class="pl-5 pr-5">
+                        <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
+                        <p>Trace your item from the retails shop to the raw materials used.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="nvc-panel3 nvc-background-right container mb-5" id="panel4">
-        <div class="p-2 content flex-column d-flex nvc-height-100">
-            <div class="row flex-8 m-0">
-                <div class="col-md-7 flex-column pl-5 d-flex justify-content-space-evenly panel-column">
+                <div class="carousel-item text-center">
                     <div>
-                        <h4 class="mt-3 panel-header">Automated Smart contract</h4>
+                        <h4 class="panel-header">Automated Smart contract</h4>
                         <h3 class="panel-subheader">ingrains trust with customers</h3>
                     </div>
-                    <div>
-                        <h6>Global Sales Picture</h6>
-                        <h6>Unintended Sales Detection</h6>
-                        <h6>Trading partner management</h6>
-                        <h6>Warehouse Management</h6>
-                        <h6>Logistic Management</h6>
+                    <div class="nvc-background-right square-image mb-4 mt-4">
+                        <img class="nvc-wid-100" src="img/smart-contracts.png" alt="smart contracts">
+                    </div>
+                    <div class="pl-5 pr-5">
+                        <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
+                        <p>Trace your item from the retails shop to the raw materials used.</p>
                     </div>
                 </div>
-                <div class="col-md-5 row align-items-center">
-                    <img class="nvc-wid-100 " src="img/smart-contracts.png" alt="smart contracts" id="panel4Image">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="nvc-panel2  nvc-background-left container mb-5" id="panel5">
-        <div class="p-2 content flex-column d-flex">
-            <div class="row flex-8 m-0">
-                <div class="col-md-6 row align-items-center">
-                    <img class="nvc-wid-100" src="img/automation.png" alt="automation" id="panel5Image">
-                </div>
-                <div class="col-md-6 pr-5 text-right flex-column d-flex justify-content-space-evenly panel-column">
+                <div class="carousel-item text-center">
                     <div>
                         <h4 class="panel-header">Automate your business</h4>
                         <h3 class="panel-subheader">and grease your economic wheel</h3>
                     </div>
-                    <div>
-                        <h6>Stock Management</h6>
-                        <h6>Order Management</h6>
-                        <h6>Trading partner management</h6>
-                        <h6>Warehouse Management</h6>
-                        <h6>Logistic Management</h6>
+                    <div class="nvc-background-right nvc-wid-100 square-image mb-4 mt-4">
+                        <img class="nvc-wid-100 p-5 flip" src="img/automation.png" alt="automation">
+                    </div>
+                    <div class="pl-5 pr-5">
+                        <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
+                        <p>Trace your item from the retails shop to the raw materials used.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="d-md-none d-block mt-4 mb-4">
-    <div class="custom-carousel carousel slide pb-4" data-ride="carousel" id="panelCarousel">
-        <!--carousel indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#panelCarousel" data-slide-to="0"></li>
-            <li data-target="#panelCarousel" data-slide-to="1"></li>
-            <li data-target="#panelCarousel" data-slide-to="2" class="active"></li>
-            <li data-target="#panelCarousel" data-slide-to="3"></li>
-            <li data-target="#panelCarousel" data-slide-to="4"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item text-center">
-                <div>
-                    <h4 class="panel-header">Trace items to origin</h4>
-                    <h3 class="panel-subheader">through out its various transforms</h3>
-                </div>
-                <div class="nvc-background-right nvc-wid-100 square-image  mb-4 mt-4">
-                    <img class="nvc-wid-100 p-4" src="img/traceToOrigin.png" alt="trace to origin">
-                </div>
-                <div class="pl-5 pr-5">
-                    <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
-                    <p>Trace your item from the retails shop to the raw materials used.</p>
-                </div>
-            </div>
-            <div class="carousel-item text-center">
-                <div>
-                    <h4 class="panel-header">Simplified Product recalls</h4>
-                    <h3 class="panel-subheader">through forward tracability</h3>
-                </div>
-                <div class="nvc-background-right square-image mb-4 mt-4">
-                    <img class="nvc-wid-100" src="img/recall.png" alt="recall">
-                </div>
-                <div class="pl-5 pr-5">
-                    <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
-                    <p>Trace your item from the retails shop to the raw materials used.</p>
+    <div class="nvc-section-divider" id="vision"></div>
+    <h3 class="font-weight-bold text-center mt-3 mb-3 mt-md-5 mb-md-0 d-none d-md-block">Some more reasons being everyone&rsquo;s 1<sup>st</sup> preference</h3>
+    <div class="container-fluid detailview-carousel mb-5 row align-items-center justify-content-end position-relative p-0">
+        <div class="d-none d-md-block col-md-4 pb-5 mb-5 pl-0">
+            <div class="carousel slide" data-ride="carousel" id="textCarousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h4 class="font-weight-bold">Low cost, Cloud delivered</h4>
+                        <h6>Solution at anytime, anywhere</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <h4 class="font-weight-bold">Escrowded Marketplace</h4>
+                        <h6>through Blockchain, Iot &amp; AI</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <h4 class="font-weight-bold">Versatile &amp; Highly Scalable</h4>
+                        <h6>as our business</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <h4 class="font-weight-bold">Global view over</h4>
+                        <h6>multi-zoned business units</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <h4 class="font-weight-bold">Increased visibility</h4>
+                        <h6>over expiry, disputes &amp; Low stock</h6>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item active text-center">
-                <div>
-                    <h4 class="panel-header">Multi-horizon smart insights</h4>
-                    <h3 class="panel-subheader">from strong perspective analysis</h3>
+            <div class="controls row">
+                <div class="w-25" onclick="carouselLeft()">
+                    <img src="img/circle_arrow_left.svg" >
                 </div>
-                <div class="nvc-background-right square-image mb-4 mt-4">
-                    <img class="nvc-wid-100 p-3" src="img/smart-insights.png" alt="smart-insights">
-                </div>
-                <div class="pl-5 pr-5">
-                    <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
-                    <p>Trace your item from the retails shop to the raw materials used.</p>
-                </div>
-            </div>
-            <div class="carousel-item text-center">
-                <div>
-                    <h4 class="panel-header">Automated Smart contract</h4>
-                    <h3 class="panel-subheader">ingrains trust with customers</h3>
-                </div>
-                <div class="nvc-background-right square-image mb-4 mt-4">
-                    <img class="nvc-wid-100" src="img/smart-contracts.png" alt="smart contracts">
-                </div>
-                <div class="pl-5 pr-5">
-                    <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
-                    <p>Trace your item from the retails shop to the raw materials used.</p>
-                </div>
-            </div>
-            <div class="carousel-item text-center">
-                <div>
-                    <h4 class="panel-header">Automate your business</h4>
-                    <h3 class="panel-subheader">and grease your economic wheel</h3>
-                </div>
-                <div class="nvc-background-right nvc-wid-100 square-image mb-4 mt-4">
-                    <img class="nvc-wid-100 p-5 flip" src="img/automation.png" alt="automation">
-                </div>
-                <div class="pl-5 pr-5">
-                    <p>Trace your item from the retail shop to the raw material used. And also trace to all the grading parameters happened and also packaging insteuments involved</p>
-                    <p>Trace your item from the retails shop to the raw materials used.</p>
+                <div class="w-25" onclick="carouselRight()">
+                    <img src="img/circle_arrow_right.svg">
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="nvc-section-divider" id="vision"></div>
-<h3 class="font-weight-bold text-center mt-3 mb-3 mt-md-5 mb-md-0 d-none d-md-block">Some more reasons being everyone&rsquo;s 1<sup>st</sup> preference</h3>
-<div class="container-fluid detailview-carousel mb-5 row align-items-center justify-content-end position-relative p-0">
-    <div class="d-none d-md-block col-md-4 pb-5 mb-5 pl-0">
-        <div class="carousel slide" data-ride="carousel" id="textCarousel">
-            <div class="carousel-inner">
+        <div class="d-none d-md-block col-md-7 carousel-panel ">
+            <div class="carousel slide" data-ride="carousel" id="imageCarousel">
                 <div class="carousel-item active">
-                    <h4 class="font-weight-bold">Low cost, Cloud delivered</h4>
-                    <h6>Solution at anytime, anywhere</h6>
+                    <img src="img/cloud.png" alt="cloud delivered">
                 </div>
                 <div class="carousel-item">
-                    <h4 class="font-weight-bold">Escrowded Marketplace</h4>
-                    <h6>through Blockchain, Iot &amp; AI</h6>
+                    <img src="img/escrowed.png" alt="escrowded">
                 </div>
                 <div class="carousel-item">
-                    <h4 class="font-weight-bold">Versatile &amp; Highly Scalable</h4>
-                    <h6>as our business</h6>
+                    <img src="img/scalable.png" alt="versatile">
                 </div>
                 <div class="carousel-item">
-                    <h4 class="font-weight-bold">Global view over</h4>
-                    <h6>multi-zoned business units</h6>
+                    <img src="img/multizone.png" alt="multizone">
                 </div>
                 <div class="carousel-item">
-                    <h4 class="font-weight-bold">Increased visibility</h4>
-                    <h6>over expiry, disputes &amp; Low stock</h6>
+                    <img src="img/visibility.png" alt="visibility">
                 </div>
             </div>
         </div>
-        <div class="controls row">
-            <div class="w-25" onclick="carouselLeft()">
-                <img src="img/circle_arrow_left.svg" >
+        <div class="d-block d-md-none text-center container mt-5 mb-5 nvc-panel7">
+            <div>
+                <h5 class="font-weight-bold">Low cost, Cloud delivered</h5>
+                <h6>Solution at anytime, anywhere</h6>
+                <img src="img/cloud.png" class="w-50" alt="cloud">
+                <p>We make supply-chain management affordable. We intent to make SCM ubiquitous and easy to use. valUchain™ is going to remove the cost barrier for businesses to have Smart SCM. </p>
             </div>
-            <div class="w-25" onclick="carouselRight()">
-                <img src="img/circle_arrow_right.svg">
+            <div class="nvc-section-divider-xs"></div>
+            <div class="mt-3">
+                <h5 class="font-weight-bold">Escrowded marketplace</h5>
+                <h6>through blockchain, Iot &amp; AI</h6>
+                <img src="img/escrowed.png" class="w-50" alt="escrowded">
+                <p>Blockchain is at the core of valUchain™. With a single and irrefutable version of the truth, trust is implicit in our solution. valUchain™ can deliver actionable analytics using advanced AI for you to make informed business decisions.</p>
+            </div>
+            <div class="nvc-section-divider-xs"></div>
+            <div class="mt-3">
+                <h5 class="font-weight-bold">Versatile &amp; Highly scalable</h5>
+                <h6>as our business</h6>
+                <img src="img/scalable.png" class="w-50" alt="scalable">
+                <p>Our cloud delivered software is capable of managing your supply chain at any scale. You could be a multi-billion dollar manufacturer or a mom-and-pop store around the corner; we have the right solution for you.</p>
+            </div>
+            <div class="nvc-section-divider-xs"></div>
+            <div class="mt-3">
+                <h5 class="font-weight-bold">Global view over</h5>
+                <h6>multi-zoned business units</h6>
+                <img src="img/multizone.png" class="w-50" alt="multizone">
+                <p>valUchain™ is the solution for a global company with business units (BU) across geographies. Businesses are able to track inventory, place orders, generate reports, across BUs from a single screen. Empowering our customers with an easy to use interface.
+                </p>
+            </div>
+            <div class="nvc-section-divider-xs"></div>
+            <div class="mt-3">
+                <h5 class="font-weight-bold">Increased visibility</h5>
+                <h6>over expiry, disputed &amp; Low stock</h6>
+                <img src="img/visibility.png" class="w-50" alt="visibility">
+                <p>valUchain™ notifies you about products nearing expiry in your  inventory. valUchain™ tracks your inventory in real time and notifies you of pilferage and low stocks. Auto-generated reports keep you up-to-date regarding everything from delivery to disputes.</p>
+            </div>
+        </div>
+        <div class="col-md-12 row align-items-center justify-content-end pt-5 pr-0 pb-5 pl-0 gradient-to-right carousel-panel-continuation">
+            <div class="col-md-5 col-8 white-border-right">
+                <a href=""><h5 class="font-weight-bold">Subscribe Now</h5></a>
+                <h6>Be the first to receive value added services</h6>
+            </div>
+            <div class="col-md-6 col-4 pl-5">
+                <h2 class="font-weight-bold">600+</h2>
+                <h6>Customers</h6>
             </div>
         </div>
     </div>
-    <div class="d-none d-md-block col-md-7 carousel-panel ">
-        <div class="carousel slide" data-ride="carousel" id="imageCarousel">
-            <div class="carousel-item active">
-                <img src="img/cloud.png" alt="cloud delivered">
+    <div class="container row nvc-panel5 mb-5" id="testimonials">
+        <div class="col-md-12 pb-4">
+            <div class="nvc-panel5-text position-relative">
+                <h4 class="nvc-theme-color font-weight-bold text-center">Testimonials</h4>
             </div>
-            <div class="carousel-item">
-                <img src="img/escrowed.png" alt="escrowded">
-            </div>
-            <div class="carousel-item">
-                <img src="img/scalable.png" alt="versatile">
-            </div>
-            <div class="carousel-item">
-                <img src="img/multizone.png" alt="multizone">
-            </div>
-            <div class="carousel-item">
-                <img src="img/visibility.png" alt="visibility">
+        </div>
+        <div class="col-md-12">
+            <div class="nvc-panel5-paragraph position-relative mt-3">
+                <p class="text-center col-md-6 mr-auto ml-auto position-relative">As a manufacture, Valuchain provides the ultimate Insight about the sale happening in Real time</p>
+                <h5 class="font-weight-bold font-italic text-center">- Kshetra Agriculture Products</h5>
             </div>
         </div>
     </div>
-    <div class="d-block d-md-none text-center container mt-5 mb-5 nvc-panel7">
-        <div>
-            <h5 class="font-weight-bold">Low cost, Cloud delivered</h5>
-            <h6>Solution at anytime, anywhere</h6>
-            <img src="img/cloud.png" class="w-50" alt="cloud">
-            <p>We make supply-chain management affordable. We intent to make SCM ubiquitous and easy to use. valUchain™ is going to remove the cost barrier for businesses to have Smart SCM. </p>
+    <div class="container-fluid p-0 panel-contact-us row" id="contact">
+        <div class="col-md-6 gradient-to-right pt-4 pb-4">
+            <h5 class="font-weight-bold">Contact Us</h5>
+            <h6>&#9743; 080 4125 2425</h6>
+            <h6>&#9993; info@nvipani.com</h6>
+            <p>#526, Ground Floor, 7th Cross, HAL 3rd stage, Jeevan Bheema Nagar,<br>Bangalore  - 560075, Karnataka, India.</p>
         </div>
-        <div class="nvc-section-divider-xs"></div>
-        <div class="mt-3">
-            <h5 class="font-weight-bold">Escrowded marketplace</h5>
-            <h6>through blockchain, Iot &amp; AI</h6>
-            <img src="img/escrowed.png" class="w-50" alt="escrowded">
-            <p>Blockchain is at the core of valUchain™. With a single and irrefutable version of the truth, trust is implicit in our solution. valUchain™ can deliver actionable analytics using advanced AI for you to make informed business decisions.</p>
-        </div>
-        <div class="nvc-section-divider-xs"></div>
-        <div class="mt-3">
-            <h5 class="font-weight-bold">Versatile &amp; Highly scalable</h5>
-            <h6>as our business</h6>
-            <img src="img/scalable.png" class="w-50" alt="scalable">
-            <p>Our cloud delivered software is capable of managing your supply chain at any scale. You could be a multi-billion dollar manufacturer or a mom-and-pop store around the corner; we have the right solution for you.</p>
-        </div>
-        <div class="nvc-section-divider-xs"></div>
-        <div class="mt-3">
-            <h5 class="font-weight-bold">Global view over</h5>
-            <h6>multi-zoned business units</h6>
-            <img src="img/multizone.png" class="w-50" alt="multizone">
-            <p>valUchain™ is the solution for a global company with business units (BU) across geographies. Businesses are able to track inventory, place orders, generate reports, across BUs from a single screen. Empowering our customers with an easy to use interface.
-            </p>
-        </div>
-        <div class="nvc-section-divider-xs"></div>
-        <div class="mt-3">
-            <h5 class="font-weight-bold">Increased visibility</h5>
-            <h6>over expiry, disputed &amp; Low stock</h6>
-            <img src="img/visibility.png" class="w-50" alt="visibility">
-            <p>valUchain™ notifies you about products nearing expiry in your  inventory. valUchain™ tracks your inventory in real time and notifies you of pilferage and low stocks. Auto-generated reports keep you up-to-date regarding everything from delivery to disputes.</p>
-        </div>
-    </div>
-    <div class="col-md-12 row align-items-center justify-content-end pt-5 pr-0 pb-5 pl-0 gradient-to-right carousel-panel-continuation">
-        <div class="col-md-5 col-8 white-border-right">
-            <a href=""><h5 class="font-weight-bold">Subscribe Now</h5></a>
-            <h6>Be the first to receive value added services</h6>
-        </div>
-        <div class="col-md-6 col-4 pl-5">
-            <h2 class="font-weight-bold">600+</h2>
-            <h6>Customers</h6>
+        <div class="col-md-6 contact-map p-0">
+            <!------ google map for company location ------->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.037050957526!2d77.64922831430455!3d12.96948099085727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14002f5c7827%3A0x9ec899fe07f2ada7!2snVipani+Technology+Solutions+Private+Limited!5e0!3m2!1sen!2sin!4v1530267283162" class="nvc-wid-100 nvc-height-100" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 </div>
-<div class="container row nvc-panel5 mb-5" id="testimonials">
-    <div class="col-md-12 pb-4">
-        <div class="nvc-panel5-text position-relative">
-            <h4 class="nvc-theme-color font-weight-bold text-center">Testimonials</h4>
-        </div>
-    </div>
-    <div class="col-md-12">
-        <div class="nvc-panel5-paragraph position-relative mt-3">
-            <p class="text-center col-md-6 mr-auto ml-auto position-relative">As a manufacture, Valuchain provides the ultimate Insight about the sale happening in Real time</p>
-            <h5 class="font-weight-bold font-italic text-center">- Kshetra Agriculture Products</h5>
-        </div>
-    </div>
-</div>
-<div class="container-fluid p-0 panel-contact-us row" id="contact">
-    <div class="col-md-6 gradient-to-right pt-4 pb-4">
-        <h5 class="font-weight-bold">Contact Us</h5>
-        <h6>&#9743; 080 4125 2425</h6>
-        <h6>&#9993; info@nvipani.com</h6>
-        <p>#526, Ground Floor, 7th Cross, HAL 3rd stage, Jeevan Bheema Nagar,<br>Bangalore  - 560075, Karnataka, India.</p>
-    </div>
-    <div class="col-md-6 contact-map p-0">
-        <!------ google map for company location ------->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.037050957526!2d77.64922831430455!3d12.96948099085727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14002f5c7827%3A0x9ec899fe07f2ada7!2snVipani+Technology+Solutions+Private+Limited!5e0!3m2!1sen!2sin!4v1530267283162" class="nvc-wid-100 nvc-height-100" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-</div>
-
 <!-- Java script for boot strap ----->
 <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
 <script src="js/popper.js" type="text/javascript"></script>
