@@ -79,6 +79,20 @@ body.hide{
 .margin-top-3{
     margin-top: -3rem;
 }
+.left-carousel .carousel-item h6{
+    padding-bottom: 0.8rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+.left-carousel .carousel-item h6:after{
+    content: '';
+    width: 25%;
+    height: 1px;
+    background: #e4e4e4;
+    position: absolute;;
+    bottom: 0;
+    left: 0;
+}
 /*========Global CSS ends here ==========*/
 /*========Header CSS starts here ========*/
 .navbar{
@@ -342,7 +356,6 @@ body.hide{
 }
 /*======== Panel 5 CSS goes here =======*/
 .nvc-panel5-paragraph p{
-    font-weight: 0.8rem;
     line-height: 2;
 }
 .nvc-panel5-paragraph p:before,
