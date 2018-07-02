@@ -370,11 +370,11 @@ body.hide{
 }
 .nvc-panel5-paragraph p:before{
     content: open-quote;
-    left: 0;
+    left: 20px;
 }
 .nvc-panel5-paragraph p:after{
     content: close-quote;
-    right: 0;
+    right: 20px;
 }
 /*======== Panel 5 CSS ends here =======*/
 /*======== Panel 6 CSS starts here =====*/
@@ -632,7 +632,7 @@ body.hide{
     padding: 6px;
 }
 .footer .signature h6{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-family: monospace;
 }
 /*========= footer css ends here =======*/
